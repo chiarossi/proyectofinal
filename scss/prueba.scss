@@ -1,0 +1,195 @@
+$espacio: 5px;
+$margen: 5px;
+$alineacion: center;
+
+$prodfondo: url(brillo1.jpg);
+$prodmov: skewX(10deg);
+$prodcolor: white;
+$productos: shorts, pollera, vestidos, sacos, remera, tops, pantalones;
+
+
+.header__p {
+	text-align: $alineacion; 
+	font-weight: bold; 
+	border-bottom: 2px solid #a788e4;
+	letter-spacing: 1px;
+	color: #760f80;
+	background: radial-gradient(circle, rgba(174,238,230,1) 0%, rgba(220,148,233,1) 100%);
+}
+
+.section__logo {
+	width: 100px;
+	height: 100px;
+	float: left;
+	padding: 3px;
+	margin: $margen*2;
+}
+
+.section__titul {
+	color: #a788e4; 
+	text-align: $alineacion; 
+	line-height: 1.6; 
+	letter-spacing: 5px; 
+	font-size: 300%; 
+	text-shadow: black 2px 0;
+	transition: all 2s;
+}
+
+.section__titul:hover {
+	font-size: 400%;
+
+}
+
+#parrafos {
+	color: #760f80;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	background: radial-gradient(circle, rgba(174,238,230,1) 0%, rgba(220,148,233,1) 100%);
+	width: 100%;
+	height: 80px;
+	margin: $margen;
+}
+
+.parrafos__p {
+	 font-weight: bold; 
+	 font-size: 100%; 
+	 text-align: center;
+	 letter-spacing: 2px;
+}
+
+.foot {
+	display: flex;
+	flex-direction: row; 
+	justify-content: space-around;
+	align-items: center;
+	border-top: 1px dotted #a788e4;
+	border-bottom: 1px dotted #a788e4;
+	
+}
+.foot__gei {
+	text-align: $alineacion;
+	letter-spacing: 2px;
+	color: #760f80;
+}
+
+#prod {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-areas: "polleras remeras vestidos"
+						 "pantalones tops vestidos"
+						 "shorts tops sacos";
+	grid-row-gap: 5px;
+	grid-column-gap: 7px;
+	justify-content: center;
+	height: 80vh;
+	width: 90%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	justify-items: stretch;
+	align-items: stretch;
+	
+}
+
+#shorts {
+	grid-area: shorts;
+	justify-self: stretch;
+	align-self: stretch;
+	text-align: center;
+	padding-top: 50px;
+}
+
+
+#pantalones{
+	grid-area: pantalones; 
+	justify-self: stretch;
+	align-self: stretch;
+	text-align: center;
+	padding-top: 15vh;
+}
+
+#tops {
+	grid-area: tops;
+	justify-self: stretch;
+	align-self: stretch;
+	text-align: center;
+	padding-top: 25vh;
+
+}
+
+#sacos {
+	grid-area: sacos;
+	justify-self: stretch;
+	align-self: stretch;
+	text-align: center;
+	padding-top: 50px; 
+
+}
+#vestido {
+	grid-area: vestidos;
+	justify-self: stretch;
+	align-self: stretch;
+	text-align: center;
+	padding-top: 25vh; 
+
+}
+
+#remera {
+	grid-area: remeras;
+	justify-self: stretch;
+	align-self: stretch;
+	text-align: center;
+	padding-top: 50px;
+	
+}
+
+#pollera {
+	grid-area: polleras;
+	justify-self: stretch;
+	align-self: stretch;
+	text-align: center;
+	padding-top: 50px;
+
+}
+
+@each $productos in shorts, pollera, vestido, sacos, remera, tops, pantalones {
+	##{$productos}:hover {
+	transform: $prodmov;
+	background-image: $prodfondo;
+	color: $prodcolor;
+	}
+}
+
+
+.p {
+	color: #760f80;
+} 
+
+.p--h2 {
+	@extend .p;
+	margin-left: $margen*10; 
+	padding: $espacio;
+}
+
+
+.color {
+	@extend .p;
+	text-align: left;
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+
+.formu {
+	margin: $margen*6;
+	border: 1px double #760f80;
+	padding: $espacio*5; 
+	text-align: $alineacion;
+}

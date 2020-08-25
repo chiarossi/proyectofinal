@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body {
+	font-family: 'Poppins', 
+	sans-serif; 
+	background: #f7f2e4;
+}
+
+/*
+h2 {
+	margin-left: 50px; 
+	padding: 7px;
+}
+
+h3 {
+	color: #760f80;
+}
+
+p {
+	color: #760f80;
+} */
+
+
+
+#buscar {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+
+}
+
+
+
+section#buscar h3.derecha {
+	
+	color: #760f80;
+	font-weight: bold; 
+	font-size: 85%; 
+	margin: 10px;
+	letter-spacing: 2px;
+}
+
+.margen {
+	margin-left: 10px;
+}
+
+.bordebuscar {
+	border-color: #a788e4;
+	background-color: #f7f2e4;
+	box-shadow: white;
+}
+
+.bordeboton {
+	border-color: #a788e4; 
+}
+.bordeboton:hover {
+	background-color: #760f80;
+}
+
+
+.lista {
+	color: #a788e4; 
+	letter-spacing: 1px;
+	font-size: 16px;
+	padding: 5px;
+	border-top: 1px solid #a788e4;
+	border-bottom: 1px solid #a788e4;
+	
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+li {
+	color: #a788e4;
+	
+}
+
+li:hover {
+	color: #760f80;
+	transform: scale(1.1);
+
+}
+
+.itemslista {
+	color: #760f80;
+}
+
+.itemslista:hover {
+	color: white; 
+	text-decoration: none;
+}
+
+
+ 
+ /*Asi estaba antes de intentar con grid
+ 	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	padding-bottom: 2%;
+	width: 25%;
+	height: 10%; */
+
+.imagenesPrincipales {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	padding: 10px;
+	align-items: center;
+	
+}
+
+.fo {
+	width: 85%;
+	height: 100%;
+	margin-left: 25px;
+}
+
+
+.contenedor {
+	width: 100%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+
+
+
+.borde {
+	border: 2px solid black;
+}
+/*
+.parrafos {
+	color: #760f80;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	background: radial-gradient(circle, rgba(174,238,230,1) 0%, rgba(220,148,233,1) 100%);
+	width: 100%;
+	height: 80px;
+}
+
+div.parrafos p.uno {
+	 font-weight: bold; 
+	 font-size: 100%; 
+	 text-align: center;
+	 letter-spacing: 2px;
+
+}
+
+div.parrafos p.dos {
+	font-weight: bold; 
+	font-size: 100%; 
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+
+div.parrafos p.tres {
+	font-weight: bold; 
+	font-size: 100%; 
+	text-align: center; 
+	letter-spacing: 2px;
+} */
+
+/*
+#foot {
+	display: flex;
+	flex-direction: row; 
+	justify-content: space-around;
+	align-items: center;
+	border-top: 1px dotted #a788e4;
+	border-bottom: 1px dotted #a788e4;
+	
+}
+
+footer#foot div.gei {
+	text-align: center;
+	letter-spacing: 2px;
+}
+*/
+
+
+#prod {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-areas: "polleras remeras vestidos"
+						 "pantalones tops vestidos"
+						 "shorts tops sacos";
+	
+	grid-row-gap: 5px;
+	grid-column-gap: 7px;
+	justify-content: center;
+	height: 80vh;
+	width: 90%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	justify-items: stretch;
+	align-items: stretch;
+	
+}
+.fond {
+	background-color: rgb(); 
+	letter-spacing: 2px;
+	font-size: 200%;
+	color: #760f80;
+	border: 1px dotted black;
+	text-decoration: overline underline;
+}
+
+
+.ofer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-bottom: 40px;
+}
+
+.imagenOferta {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-around;
+	width: 500px;
+	height: 500px; 
+	background-image: url(multimedia/promo.png);  
+	background-size: 500px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px dashed #a788e4;
+	padding: 10px;
+	margin: 5px 5px;	
+}
+
+.imagenesGaleria {
+	width: 300px;
+	height: 400px;
+	padding: 10px;
+}
+
+
+#gal {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+div #regulares:hover {
+	transform: scale(1.1,1.1);
+}
+
+.ss {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 95vh;
+  margin: 2rem auto 0;
+  padding: 20px;
+}
+.ss-col {
+  position: relative;
+  width: 50%;
+}
+.ss-col:first-child .ss-col-content {
+  border-radius: 5px 0 0 5px;
+}
+.ss-col:nth-child(2) .ss-col-content {
+  border-radius: 0 5px 5px 0;
+}
+.ss-col-content {
+  padding-top: 71.25vh;
+  position: relative;
+  overflow: hidden;
+}
+.ss-col-content-child {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: -webkit-transform 400ms ease-out;
+  transition: transform 400ms ease-out;
+  transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
+}
+.ss-col-content-child.odd {
+  flex-direction: column-reverse;
+}
+.ss-img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 71.25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ss-controls {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  display: flex;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+.ss-controls-btn {
+  width: 5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  background: #f7f2e4;
+}
+
+
+.ss-controls-btn:hover, .ss-controls-btn:focus {
+  outline: none;
+  color: #a788e4;
+}
+
+
+.whatsapp {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	border-radius: 100%;
+	box-shadow: 1px;
+}
