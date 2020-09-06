@@ -7,17 +7,18 @@
   background: radial-gradient(circle, #aeeee6 0%, #dc94e9 100%); }
 
 .section__logo {
-  width: 100px;
-  height: 100px;
-  float: left;
-  padding: 3px;
-  margin: 10px; }
+  width: 60%;
+  height: 100%;
+  text-align: center; 
+  justify-content: center;
+}
 
 .section__titul {
   color: #a788e4;
   text-align: center;
   line-height: 1.6;
   letter-spacing: 5px;
+  padding-top: 8px;
   font-size: 300%;
   text-shadow: black 2px 0;
   transition: all 2s; }
@@ -64,7 +65,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 2fr 1fr;
-  grid-template-areas: "polleras remeras vestidos" "pantalones tops vestidos" "shorts tops sacos";
+  grid-template-areas: "polleras remeras vestidos"
+ "pantalones tops vestidos"
+ "shorts tops sacos";
   grid-row-gap: 5px;
   grid-column-gap: 7px;
   justify-content: center;
