@@ -18,11 +18,11 @@ $productos: shorts, pollera, vestidos, sacos, remera, tops, pantalones;
 }
 
 .section__logo {
-	width: 100px;
+	width: 60%;
 	height: 100px;
-	float: left;
-	padding: 3px;
-	margin: $margen*2;
+
+	justify-content: center;
+
 }
 
 .section__titul {
@@ -33,6 +33,7 @@ $productos: shorts, pollera, vestidos, sacos, remera, tops, pantalones;
 	font-size: 300%; 
 	text-shadow: black 2px 0;
 	transition: all 2s;
+	padding-top: 8px;
 }
 
 .section__titul:hover {
