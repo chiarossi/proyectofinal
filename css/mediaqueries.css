@@ -19,6 +19,9 @@
   .lista {
     display: none;
   }
+  .fotosale{
+    display: none;
+  }
   }
   
   @media only screen and (min-width: 768px) {
@@ -28,6 +31,11 @@
       margin-left: 1px;
       }
     .hamburger {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 975px) {
+    .fotosale {
       display: none;
     }
   }

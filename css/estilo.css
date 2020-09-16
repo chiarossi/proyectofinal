@@ -381,6 +381,7 @@ div #regulares:hover {
 	-ms-user-select:none;
 	user-select:none
 }
+
 .hamburger.is-active{
   background-color:none;
 }
@@ -461,4 +462,13 @@ div #regulares:hover {
   color: #a788e4;
   transition: all 2s;
   transform: scale(1,1,1,1);
+}
+.fotosale {
+	position: fixed;
+	width: 20%;
+	padding-left: 100px;
+	transition: all 1s;
+}
+.fotosale:hover {
+	transform: scale(1.5,1.5);
 }
