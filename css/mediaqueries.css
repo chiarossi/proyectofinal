@@ -23,8 +23,18 @@
     display: none;
   }
   #prod {
-    margin-left: 75px;
+    margin-left: 55px;
   }
+  }
+  @media only screen and (max-width: 605px) {
+    .ss {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 606px) {
+    .imagenportada {
+      display: none;
+    }
   }
   
   @media only screen and (min-width: 768px) {

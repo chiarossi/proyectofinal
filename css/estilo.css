@@ -186,6 +186,7 @@ div #regulares:hover {
   width: 95vh;
   margin: 2rem auto 0;
   padding: 20px;
+  z-index: ;
 }
 .ss-col {
   position: relative;
@@ -388,4 +389,9 @@ div #regulares:hover {
 }
 .fotosale:hover {
 	transform: scale(1.5,1.5);
+}
+.imagenportada {
+	width: 90%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
