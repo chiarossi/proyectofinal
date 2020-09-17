@@ -7,19 +7,6 @@ body {
 	background: #f7f2e4;
 }
 
-/*
-h2 {
-	margin-left: 50px; 
-	padding: 7px;
-}
-
-h3 {
-	color: #760f80;
-}
-
-p {
-	color: #760f80;
-} */
 #buscar {
 	width: 100%;
 	height: 100%;
@@ -48,7 +35,9 @@ section#buscar h3.derecha {
 	background-color: #f7f2e4;
 	box-shadow: white;
 }
-
+.carrito {
+	width: 40px;
+}
 .lista {
 	color: #a788e4; 
 	letter-spacing: 1px;
@@ -69,36 +58,20 @@ section#buscar h3.derecha {
 }
 
 .textpurple:hover {
-	color: #a788e4 !important;
-	
+	color: #a788e4 !important;	
 }
 
 li:hover {
 	color: #760f80;
 	transform: scale(1.1);
-
 }
-
 .itemslista {
 	color: #760f80;
 }
-
 .itemslista:hover {
 	color: white; 
 	text-decoration: none;
 }
-
- /*Asi estaba antes de intentar con grid
- 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: center;
-	padding-bottom: 2%;
-	width: 25%;
-	height: 10%; */
-
 .imagenesPrincipales {
 	display: flex;
 	flex-direction: row;
@@ -130,59 +103,6 @@ li:hover {
 .borde {
 	border: 2px solid black;
 }
-/*
-.parrafos {
-	color: #760f80;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: center;
-	background: radial-gradient(circle, rgba(174,238,230,1) 0%, rgba(220,148,233,1) 100%);
-	width: 100%;
-	height: 80px;
-}
-div.parrafos p.uno {
-	 font-weight: bold; 
-	 font-size: 100%; 
-	 text-align: center;
-	 letter-spacing: 2px;
-
-}
-
-div.parrafos p.dos {
-	font-weight: bold; 
-	font-size: 100%; 
-	text-align: center;
-	letter-spacing: 2px;
-}
-
-
-div.parrafos p.tres {
-	font-weight: bold; 
-	font-size: 100%; 
-	text-align: center; 
-	letter-spacing: 2px;
-} */
-
-/*
-#foot {
-	display: flex;
-	flex-direction: row; 
-	justify-content: space-around;
-	align-items: center;
-	border-top: 1px dotted #a788e4;
-	border-bottom: 1px dotted #a788e4;
-	
-}
-
-footer#foot div.gei {
-	text-align: center;
-	letter-spacing: 2px;
-}
-*/
-
 
 #prod {
 	position: relative;
@@ -204,7 +124,6 @@ footer#foot div.gei {
 	padding-top: 20px;
 	justify-items: stretch;
 	align-items: stretch;
-	
 }
 .fond {
 	background-color: rgb(); 
@@ -327,12 +246,10 @@ div #regulares:hover {
   background: #f7f2e4;
 }
 
-
 .ss-controls-btn:hover, .ss-controls-btn:focus {
   outline: none;
   color: #a788e4;
 }
-
 
 .whatsapp {
 	position: fixed;
